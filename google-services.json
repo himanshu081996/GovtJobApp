@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "172168851770",
+    "project_id": "govtjobs-3173b",
+    "storage_bucket": "govtjobs-3173b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172168851770:android:88bb7157e4e7978d4d6003",
+        "android_client_info": {
+          "package_name": "com.hmittal.govtjobs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGx6c2kXS8b_omsn8YwBPp3yV-9rJQCNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172168851770:android:84fca83d90c7228d4d6003",
+        "android_client_info": {
+          "package_name": "com.hmittal.youthnaukri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGx6c2kXS8b_omsn8YwBPp3yV-9rJQCNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

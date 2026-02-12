@@ -1,30 +1,119 @@
 {
   "expo": {
-    "name": "GovtJobApp",
-    "slug": "GovtJobApp",
+    "name": "Youth Naukri",
+    "slug": "government-jobs-india",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "scheme": "youthnaukri",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hmittal.youthnaukri",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized ads to you.",
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "cstr6suwn9.skadnetwork"
+          }
+        ]
+      }
     },
     "android": {
+      "package": "com.hmittal.youthnaukri",
+      "versionCode": 9,
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.WAKE_LOCK",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "com.google.android.c2dm.permission.RECEIVE"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "youthnaukri.com"
+            },
+            {
+              "scheme": "youthnaukri"
+            },
+            {
+              "scheme": "exp"
+            },
+            {
+              "scheme": "exps"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#1976D2",
+      "iosDisplayInForeground": false,
+      "androidMode": "default",
+      "androidCollapsedTitle": "#{unread_notifications} new notifications"
+    },
+    "plugins": [
+      "expo-notifications",
+      [
+        "@react-native-firebase/app",
+        {
+          "android": {
+            "googleServicesFile": "./google-services.json"
+          }
+        }
+      ],
+      "@react-native-firebase/messaging",
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "3395678557259234",
+          "clientToken": "2e9563373417fc3de7553a30cc0fd725",
+          "displayName": "Youth Naukri",
+          "userTrackingUsageDescription": "This app uses tracking for analytics and ads attribution.",
+          "advertiserIDCollectionEnabled": true,
+          "autoInitEnabled": true,
+          "autoLogAppEvents": true
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-1305313519701150~3077450124",
+          "iosAppId": "ca-app-pub-1305313519701150~3077450124"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3704be38-10b8-4179-aa4e-7d969e767888"
+      }
     }
   }
 }

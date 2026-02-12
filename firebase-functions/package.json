@@ -1,0 +1,21 @@
+{
+  "name": "govtjob-firebase-functions",
+  "description": "Firebase Functions for Government Job App Push Notifications",
+  "scripts": {
+    "build": "echo 'No build step needed for JavaScript functions'",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "expo-facebook": "^12.2.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  }
+}
