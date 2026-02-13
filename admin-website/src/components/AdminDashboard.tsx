@@ -91,7 +91,7 @@ export function AdminDashboard() {
       if (editingJob) {
         await JobService.updateJob(editingJob.id, jobData);
       } else {
-        await JobService.createJob(jobData);
+        await JobService.addJob(jobData);
       }
 
       await loadJobs();
@@ -144,7 +144,7 @@ export function AdminDashboard() {
       if (editingCategory) {
         await CategoryService.updateCategory(editingCategory.id, categoryData);
       } else {
-        await CategoryService.createCategory(categoryData);
+        await CategoryService.addCategory(categoryData);
       }
 
       await loadCategories();
