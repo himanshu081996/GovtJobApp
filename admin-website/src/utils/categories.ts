@@ -10,5 +10,6 @@ export const jobCategories = [
   { id: 'private', name: 'Private', icon: '🏢', description: 'Private sector job opportunities', totalJobs: 0, color: '#E91E63' },
   { id: 'results', name: 'Results', icon: '📊', description: 'Exam results and merit lists', totalJobs: 0, color: '#FF9800' },
   { id: 'admit_cards', name: 'Admit Cards', icon: '🎫', description: 'Admit card downloads and hall tickets', totalJobs: 0, color: '#2196F3' },
-  { id: 'govt', name: 'Govt', icon: '🏛️', description: 'General government job notifications', totalJobs: 0, color: '#4CAF50' }
+  { id: 'govt', name: 'Govt', icon: '🏛️', description: 'General government job notifications', totalJobs: 0, color: '#4CAF50' },
+  { id: 'post_office', name: 'Post Office', icon: '📮', description: 'India Post recruitment and postal jobs', totalJobs: 0, color: '#FF5722' }
 ];
